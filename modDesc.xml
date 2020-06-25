@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="47">
+    <title>
+        <en>CruiseControlLevels</en>
+        <de>Tempomatstufen</de>
+    </title>
+    <description>
+		<de><![CDATA[Dieser Mod fügt dem Tempomat 3 verschiedene Stufen hinzu. Diese können mit den Tasten Shift+4 und Strg+4 durchgeschaltet werden.]]>
+		</de>
+		<en><![CDATA[This mod adds 3 speed levels to the cruise control. With the buttons shift+4 and ctrl+4 you can switch levels.]]>
+		</en>
+    </description>
+    <author>Rival</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <!--sourceFile filename="register.lua" /-->
+        <sourceFile filename="AddSpecialization.lua"/>
+    </extraSourceFiles>
+	
+	<addSpecialization>
+		<specialization name="cruiseControlLevels" className="CruiseControlLevels" filename="CruiseControlLevels.lua" l10nNameTag="GAME_EXTENSION" debug="false">
+			<restrictions state="0" name="drivable" />
+			<restrictions state="0" name="motorized" />
+			<restrictions state="0" name="enterable" />
+		</specialization>
+	</addSpecialization>
+	
+	
+	<l10n>
+        <text name="input_TOGGLE_CC_LEVEL"> 
+            <de>Tempomatstufe weiterschalten</de>
+            <en>Change cruise control level</en>
+        </text>
+        <text name="input_TOGGLE_CC_LEVEL"> 
+            <de>Tempomatstufe zurückschalten</de>
+            <en>Change cruise control level back</en>
+        </text>
+    </l10n>
+
+	<actions>	
+		<action name="TOGGLE_CC_LEVEL" category="VEHICLE" />
+		<action name="TOGGLE_CC_LEVEL_BACK" category="VEHICLE" />
+	</actions>
+	
+	<inputBinding>
+		<actionBinding action="TOGGLE_CC_LEVEL">
+			<binding device="KB_MOUSE_DEFAULT" 	input="KEY_lshift KEY_4" />
+		</actionBinding>
+		<actionBinding action="TOGGLE_CC_LEVEL_BACK">
+			<binding device="KB_MOUSE_DEFAULT" 	input="KEY_lctrl KEY_4" />
+		</actionBinding>
+	</inputBinding>
+
+
+</modDesc>
