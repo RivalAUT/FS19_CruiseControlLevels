@@ -4,5 +4,5 @@ CruiseControlLevels adds three speed levels to the cruise control. Basically, th
 But unlike SpeedControl, CruiseControlLevels keeps the default cruise control keys (1,2,3) with their default function (increase/decrease speed, activate cruise control). Switching speed levels is possible with lshift+4 (1->2->3) or lctrl+4 (3->2->1).
 Default speeds for these levels are 10, 20 and max speed.
 
-## What do I need?
+## What do you need?
 Just put the zip file in your mods folder. [Download it here.](https://github.com/RivalAUT/FS19_CruiseControlLevels/raw/master/FS19_CruiseControlLevels.zip)

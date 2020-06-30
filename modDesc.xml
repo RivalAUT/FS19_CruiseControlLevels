@@ -11,7 +11,7 @@
 		</en>
     </description>
     <author>Rival</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <iconFilename>icon.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
@@ -33,7 +33,7 @@
             <de>Tempomatstufe weiterschalten</de>
             <en>Change cruise control level</en>
         </text>
-        <text name="input_TOGGLE_CC_LEVEL"> 
+        <text name="input_TOGGLE_CC_LEVEL_BACK"> 
             <de>Tempomatstufe zurückschalten</de>
             <en>Change cruise control level back</en>
         </text>
